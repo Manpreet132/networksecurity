@@ -1,0 +1,30 @@
+[ 2024-11-22 00:50:43,361 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2024-11-22 00:50:43,368 ] 107 dagshub - INFO - Accessing as Manpreet132
+[ 2024-11-22 00:50:43,818 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Manpreet132/networksecurity "HTTP/1.1 200 OK"
+[ 2024-11-22 00:50:44,183 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2024-11-22 00:50:44,185 ] 107 dagshub - INFO - Initialized MLflow to track repo "Manpreet132/networksecurity"
+[ 2024-11-22 00:50:44,187 ] 107 dagshub - INFO - Repository Manpreet132/networksecurity initialized!
+[ 2024-11-22 00:50:44,188 ] 20 root - INFO - Initiate the data ingestion
+[ 2024-11-22 00:50:44,188 ] 41 root - INFO - Connecting to MongoDB: Database=Manpreet, Collection=NetworkData
+[ 2024-11-22 00:50:58,228 ] 62 root - INFO - Data loaded successfully from MongoDB. Shape of dataframe: (11055, 31)
+[ 2024-11-22 00:50:58,308 ] 75 root - INFO - Data exported to feature store at: Artifacts\11_22_2024_00_50_41\data_ingestion\feature_store\phisingData.csv
+[ 2024-11-22 00:50:58,311 ] 90 root - INFO - Performed train/test split successfully.
+[ 2024-11-22 00:50:58,375 ] 102 root - INFO - Train and test data saved to: Artifacts\11_22_2024_00_50_41\data_ingestion\ingested\train.csv and Artifacts\11_22_2024_00_50_41\data_ingestion\ingested\test.csv
+[ 2024-11-22 00:50:58,376 ] 22 root - INFO - Data Initiation Completed
+[ 2024-11-22 00:50:58,384 ] 26 root - INFO - Initiate the data Validation
+[ 2024-11-22 00:50:58,441 ] 32 root - INFO - Required number of columns:2
+[ 2024-11-22 00:50:58,442 ] 33 root - INFO - Data frame has columns:31
+[ 2024-11-22 00:50:58,442 ] 32 root - INFO - Required number of columns:2
+[ 2024-11-22 00:50:58,442 ] 33 root - INFO - Data frame has columns:31
+[ 2024-11-22 00:50:58,645 ] 28 root - INFO - data Validation Completed
+[ 2024-11-22 00:50:58,646 ] 31 root - INFO - data Transformation started
+[ 2024-11-22 00:50:58,646 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2024-11-22 00:50:58,646 ] 65 root - INFO - Starting data transformation
+[ 2024-11-22 00:50:58,674 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2024-11-22 00:50:58,674 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2024-11-22 00:50:58,695 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-22 00:50:58,702 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-22 00:50:58,702 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-22 00:50:58,705 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-22 00:50:58,707 ] 35 root - INFO - data Transformation completed
+[ 2024-11-22 00:50:58,708 ] 37 root - INFO - Model Training sstared
