@@ -1,0 +1,13 @@
+[ 2024-11-18 23:17:26,759 ] 21 root - INFO - Initiate the data ingestion
+[ 2024-11-18 23:17:26,760 ] 41 root - INFO - Connecting to MongoDB: Database=Manpreet, Collection=NetworkData
+[ 2024-11-18 23:17:37,828 ] 62 root - INFO - Data loaded successfully from MongoDB. Shape of dataframe: (11055, 31)
+[ 2024-11-18 23:17:38,040 ] 75 root - INFO - Data exported to feature store at: Artifacts\11_18_2024_23_17_25\data_ingestion\feature_store\phisingData.csv
+[ 2024-11-18 23:17:38,048 ] 90 root - INFO - Performed train/test split successfully.
+[ 2024-11-18 23:17:38,217 ] 102 root - INFO - Train and test data saved to: Artifacts\11_18_2024_23_17_25\data_ingestion\ingested\train.csv and Artifacts\11_18_2024_23_17_25\data_ingestion\ingested\test.csv
+[ 2024-11-18 23:17:38,218 ] 23 root - INFO - Data Initiation Completed
+[ 2024-11-18 23:17:38,241 ] 27 root - INFO - Initiate the data Validation
+[ 2024-11-18 23:17:38,362 ] 32 root - INFO - Required number of columns:2
+[ 2024-11-18 23:17:38,362 ] 33 root - INFO - Data frame has columns:31
+[ 2024-11-18 23:17:38,362 ] 32 root - INFO - Required number of columns:2
+[ 2024-11-18 23:17:38,362 ] 33 root - INFO - Data frame has columns:31
+[ 2024-11-18 23:17:38,780 ] 29 root - INFO - data Validation Completed

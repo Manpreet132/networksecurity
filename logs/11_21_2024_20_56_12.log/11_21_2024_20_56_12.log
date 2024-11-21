@@ -1,0 +1,2 @@
+[ 2024-11-21 20:56:13,530 ] 20 root - INFO - Initiate the data ingestion
+[ 2024-11-21 20:56:13,531 ] 41 root - INFO - Connecting to MongoDB: Database=Manpreet, Collection=NetworkData

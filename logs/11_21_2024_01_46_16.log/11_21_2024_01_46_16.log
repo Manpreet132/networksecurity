@@ -1,0 +1,30 @@
+[ 2024-11-21 01:46:18,200 ] 20 root - INFO - Initiate the data ingestion
+[ 2024-11-21 01:46:18,201 ] 41 root - INFO - Connecting to MongoDB: Database=Manpreet, Collection=NetworkData
+[ 2024-11-21 01:46:28,328 ] 62 root - INFO - Data loaded successfully from MongoDB. Shape of dataframe: (11055, 31)
+[ 2024-11-21 01:46:28,402 ] 75 root - INFO - Data exported to feature store at: Artifacts\11_21_2024_01_46_16\data_ingestion\feature_store\phisingData.csv
+[ 2024-11-21 01:46:28,405 ] 90 root - INFO - Performed train/test split successfully.
+[ 2024-11-21 01:46:28,469 ] 102 root - INFO - Train and test data saved to: Artifacts\11_21_2024_01_46_16\data_ingestion\ingested\train.csv and Artifacts\11_21_2024_01_46_16\data_ingestion\ingested\test.csv
+[ 2024-11-21 01:46:28,470 ] 22 root - INFO - Data Initiation Completed
+[ 2024-11-21 01:46:28,478 ] 26 root - INFO - Initiate the data Validation
+[ 2024-11-21 01:46:28,535 ] 32 root - INFO - Required number of columns:2
+[ 2024-11-21 01:46:28,536 ] 33 root - INFO - Data frame has columns:31
+[ 2024-11-21 01:46:28,536 ] 32 root - INFO - Required number of columns:2
+[ 2024-11-21 01:46:28,536 ] 33 root - INFO - Data frame has columns:31
+[ 2024-11-21 01:46:28,690 ] 28 root - INFO - data Validation Completed
+[ 2024-11-21 01:46:28,691 ] 31 root - INFO - data Transformation started
+[ 2024-11-21 01:46:28,691 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2024-11-21 01:46:28,691 ] 65 root - INFO - Starting data transformation
+[ 2024-11-21 01:46:28,723 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2024-11-21 01:46:28,723 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2024-11-21 01:46:28,743 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-21 01:46:28,747 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-21 01:46:28,748 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-21 01:46:28,751 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-21 01:46:28,753 ] 35 root - INFO - data Transformation completed
+[ 2024-11-21 01:46:28,753 ] 37 root - INFO - Model Training sstared
+[ 2024-11-21 01:50:13,782 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-21 01:50:13,785 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-21 01:50:13,785 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-21 01:50:13,802 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-21 01:50:13,802 ] 151 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\11_21_2024_01_46_16\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.991238793806031), precision_score=np.float64(0.9908350305498982), recall_score=np.float64(0.9916428862617204)), test_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9801429706115965), precision_score=np.float64(0.9739542225730071), recall_score=np.float64(0.9864108713029577)))
+[ 2024-11-21 01:50:13,804 ] 42 root - INFO - Model Training artifact created
