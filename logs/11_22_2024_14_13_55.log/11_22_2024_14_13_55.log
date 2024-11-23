@@ -1,0 +1,6 @@
+[ 2024-11-22 14:13:59,493 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2024-11-22 14:13:59,504 ] 107 dagshub - INFO - Accessing as Manpreet132
+[ 2024-11-22 14:13:59,916 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Manpreet132/networksecurity "HTTP/1.1 200 OK"
+[ 2024-11-22 14:14:00,259 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2024-11-22 14:14:00,262 ] 107 dagshub - INFO - Initialized MLflow to track repo "Manpreet132/networksecurity"
+[ 2024-11-22 14:14:00,263 ] 107 dagshub - INFO - Repository Manpreet132/networksecurity initialized!
